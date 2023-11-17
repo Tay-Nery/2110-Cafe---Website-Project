@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .top {
+            position: relative;
+            height: auto;
+            width: 100%;
+        }
+        .logo {
+            width: 200px;
+            display: block;
+        }
+        ul, li {
+            margin: 5px 0px;
+            padding: 2px;
+            background: rgba(27, 27, 27, 0.623);
+            display: block;
+        }
+        a {
+           padding: 10px;
+           color: rgb(255, 255, 255);
+           /*preciso alinhar meu menu*/
+        }
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0 auto;
+            max-width: 100%;
+            background-color: rgb(0, 0, 0);
+        }
+        .main-content {
+            width: 900px;
+            margin: 0 auto;
+            text-align: center; /*Didn't work, don't know why*/
+        }
+        h1 {
+            color:  rgb(243, 161, 67);
+            font-size: 50px;
+        }
+        h2 {
+            color:  rgb(243, 161, 67);
+            background-color: rgba(0, 0, 0, 0.60);
+            /*rgb(13, 143, 110);*/
+            text-align: center;
+        }
+        div {
+            height: 350px;
+            background-size: cover;
+            /*If wanting to slide down the p on the div write next css line with p step too*/
+            position: relative;
+            
+        }
+        .first, .second, .third {
+            text-align: center;
+        }
+        .first {
+            background-image: url(/assets/originals/cafeEspresso.jpg); 
+        }
+        .second {
+            background-image: url(/assets/cappuccino.png); 
+        }
+        .third {
+            background-image: url(/assets/massalaChai.png);
+        }
+        .main-content p {
+            color:  rgb(243, 161, 67);
+            background-color: rgba(0, 0, 0, 0.60);
+            /*
+            color: rgba(255, 255, 255, 1);
+            background-color: rgb(128, 70, 4);*/
+            padding: 8px;
+            text-align: center;
+            line-height: 20px;
+            /*to slide down the p on the div cf. css-div too/ frist do these 2 next*/
+            position: absolute; /*will break it out of documents regular flow*/
+            bottom: 0; /*move it from 0px to the bottom of page*/
+            margin: 0px 90px 5px 90px; /*will push p all the way down*/
+        }
+        .price {
+            float: right;
+        }
+        footer {
+            color: rgb(243, 161, 67);
+            text-align: center;
+            margin: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <img class="logo" src="./assets/Logo 2110 Cqfe/Logo00.png" alt="">
+        <ul>
+            <li>
+                <a href="home">Home</a>
+                <a href="beverages">Beverages Menu</a>
+                <a href="food">Food Menu</a>
+                <a href="contact">Contact</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="main-content">
+        <div class="first">  
+            <h2>Espresso</h2>
+            <p>Well-balanced Espresso, with a chocolatey or nutty base, and a smooth finish <br />
+            <span class="price"><strong>3.5$</strong></span></p>
+        </div>
+    
+        <div class="second">
+            <h2>Cappuccino</h2>
+            <p>The perfect balance of espresso, steamed milk and foam <br />
+            <span class="price"><strong>5.5$</strong></span></p>
+        </div>
+
+        <div class="third">
+            <h2>Traditional Masala Chai</h2>
+            <p>Black tea (milk is optional) mixed with strong spices: cinnamon, cardamom,
+            cloves, ginger and black peppercorns <br />
+            <span class="price"><strong>8$</strong></span></p>
+        </div>
+    </div>
+    
+<footer>©2023 by NeryCode</footer>
+</body>
